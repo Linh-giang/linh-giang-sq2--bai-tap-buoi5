@@ -4,6 +4,8 @@ Where ID%2=0
 --baitap2
 SELECT COUNT (CITY)  -  COUNT (DISTINCT CITY) FROM STATION
 --baitap3
+Select ceiling(avg(salary) - avg(replace(salary, '0' ,'')))
+from employees
 --baitap4
 SELECT
 ROUND(CAST(SUM(item_count*order_occurrences)/SUM(order_occurrences)AS
